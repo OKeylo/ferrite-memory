@@ -1,0 +1,12 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sidebar-li {
+  color: #45A29E !important;
+}
+
+.sidebar-li:hover {
+  color: #C5C6C7 !important;
+}
