@@ -1,6 +1,16 @@
 import { Nav } from "react-bootstrap";
 
 export default function Navigation() {
+  function handleMovTo(selectedKey: string) {
+    const element = document.getElementById(selectedKey) as HTMLElement;
+    let elDistanceToTop = window.scrollY + element.getBoundingClientRect().top
+
+    scrollTo({
+      top: elDistanceToTop - 60,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
 
   return (
     <nav>
@@ -14,6 +24,7 @@ export default function Navigation() {
           alignItems: "flex-start",
           borderRadius: "4px",
         }}
+        onSelect={(selectedKey) => handleMovTo(selectedKey as string)}
       >
         <Nav.Item style={{paddingLeft: 16}}>
           <h4>В этой статье</h4>
@@ -21,15 +32,15 @@ export default function Navigation() {
         <Nav.Item>
           <Nav.Link
             className="sidebar-li"
-            href="#start"
+            eventKey={"start"}
           >
-            Начало
+            Введение
           </Nav.Link>
         </Nav.Item>
         <Nav.Item className="sidebarr">
           <Nav.Link
             className="sidebar-li"
-            href="#development"
+            eventKey={"development"}
           >
             Разработка
           </Nav.Link>
@@ -37,7 +48,7 @@ export default function Navigation() {
         <Nav.Item>
           <Nav.Link
             className="sidebar-li"
-            href="#principle-of-operation"
+            eventKey={"principle-of-operation"}
           >
             Принцип работы
           </Nav.Link>
@@ -45,9 +56,17 @@ export default function Navigation() {
         <Nav.Item>
           <Nav.Link
             className="sidebar-li"
-            href="#flaws"
+            eventKey={"flaws"}
           >
             Недостатки
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            className="sidebar-li"
+            eventKey={"museum"}
+          >
+            Музей ПГНИУ
           </Nav.Link>
         </Nav.Item>
       </Nav>
