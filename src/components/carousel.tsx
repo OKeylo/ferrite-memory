@@ -2,7 +2,7 @@ import { Carousel, Image } from "react-bootstrap";
 
 export default function CarouselComponent() {
   return (
-    <Carousel style={{width: "50%", alignSelf: "center"}}>
+    <Carousel style={{width: "50%", alignSelf: "center", zIndex: 0}}>
       <Carousel.Item>
         <Image src='https://s00.yaplakal.com/pics/pics_preview/9/9/1/7530199.jpg' alt='Куб памяти КП-III-512/19Б' width={600} height={400} style={{borderRadius: "4px"}}/>
         <Carousel.Caption style={{backgroundColor: "#1F2833", borderRadius: "4px", opacity: "80%"}}>
