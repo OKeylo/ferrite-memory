@@ -75,6 +75,7 @@ function App() {
           <section id="museum">
             <h2>Музей вычислительной техники ПГНИУ</h2>
             <p>Расположение: корп. 8, ауд. 401</p>
+            <p>Экспонат "Блок ферритовой памяти"</p>
             <div className='wrapper'>
               <div style={{width: 500, height: 300, overflow: "hidden"}}>
                 <Image
