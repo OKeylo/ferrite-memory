@@ -1,9 +1,10 @@
 import { Button, Image } from 'react-bootstrap';
+import JohnPhoto from "../assets/john.jpg";
 
 function AuthorCard() {
   return (
     <div style={{ display: "flex", gap: 16, justifyContent: "center", marginBottom: 8 }}>
-      <Image src="https://images.computerhistory.org/revonline/images/102649741-03-01.jpg?w=600" height={400} style={{borderRadius: "4px"}} />
+      <Image src={JohnPhoto} height={400} style={{borderRadius: "4px"}} />
       <div style={{width: "50%"}}>
         <h3>Джон Адам Преспер Эккерт-младший</h3>
         <p>
