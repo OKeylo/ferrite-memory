@@ -3,6 +3,12 @@ import { Image } from 'react-bootstrap';
 import CarouselComponent from './components/carousel';
 import AuthorCard from './components/authorCard';
 import Navigation from './components/nav';
+import GisterezisPhoto from "./assets/gisterezis.png";
+import FerriteSchemePhoto from "./assets/ferrite-scheme.jpg";
+import MuseumFerritePhoto1 from "./assets/museum-ferrite1.jpg";
+import MuseumFerritePhoto2 from "./assets/museum-ferrite2.jpg";
+import MuseumFerritePhoto3 from "./assets/museum-ferrite3.jpg";
+import MuseumFerritePhoto4 from "./assets/museum-ferrite4.jpg";
 
 function App() {
   
@@ -40,7 +46,7 @@ function App() {
             <AuthorCard />
             <p>В основу ферритовой памяти легло физическое явление, называемое магнитным гистерезисом.<br/>Магнитный гистерезис возникает, когда к ферромагнетику, например железу, прикладывается внешнее магнитное поле, и атомные диполи выравниваются по нему. Даже если поле убрать, часть выравнивания сохранится: материал намагничен. После намагничивания магнит останется намагниченным на неопределенный срок. Для его размагничивания требуется тепло или магнитное поле противоположного направления. (Магнитный гистерезис)</p>
             <p>Магнитный гистерезис возникает, когда к ферромагнетику, например железу, прикладывается внешнее магнитное поле , и атомные диполи выравниваются по нему. Даже если поле убрать, часть выравнивания сохранится: материал намагничен . После намагничивания магнит остается намагниченным на неопределенный срок. Для его размагничивания требуется тепло или магнитное поле противоположного направления.</p>
-            <Image src="https://cdn.fxyz.ru/img/magnetic/gisterezis.png" alt="Магнитный гистерезис" width={500} style={{alignSelf: "center", borderRadius: "4px"}}/>
+            <Image src={GisterezisPhoto} alt="Магнитный гистерезис" width={500} style={{alignSelf: "center", borderRadius: "4px"}}/>
           </section>
 
           <section id="principle-of-operation">
@@ -48,7 +54,7 @@ function App() {
             <p>Для систем хранения данных цифровых машин используются ферриты с нелинейными магнитными характеристиками - ферриты с прямоугольной петлей гистерезиса (ППГ).</p>
             <p>Эти ферриты особенны тем, что сердечники, изготовленные из них, могут находиться в двух устойчивых состояниях намагниченности - +B, которое соответствует коду «1», и —В, соответствующее коду «0» в двоичной системе счисления. Для того чтобы перемагнитить, например ферритовый стержень или кольцо, необходимо создать магнитное поле определенной напряженности. Если же магнитное поле имеет напряженность меньше, чем пороговое значение H, то феррит не перемагнитится даже при многократном и длительном приложении этого магнитного поля.</p>
             <Image
-              src="https://s00.yaplakal.com/pics/pics_preview/7/5/1/7530157.jpg"
+              src={FerriteSchemePhoto}
               alt="ферритовые кольца"
               style={{float: "right", borderRadius: "4px"}}
             />
@@ -79,7 +85,7 @@ function App() {
             <div className='wrapper'>
               <div style={{width: 500, height: 300, overflow: "hidden"}}>
                 <Image
-                  src="https://media.discordapp.net/attachments/1206160508424687686/1242806878254141441/IMG_20240518_110222_HDR.jpg?ex=664f2d9a&is=664ddc1a&hm=770e6814f4d63c657aa54e4fdb56f4ba8938505068e4dfaad38e3e0f402f987f&=&format=webp&width=1214&height=683"
+                  src={MuseumFerritePhoto1}
                   alt='1'
                   width={500}
                   rounded
@@ -88,7 +94,7 @@ function App() {
               </div>
               <div style={{width: 500, height: 300, overflow: "hidden"}}>
                 <Image
-                  src="https://media.discordapp.net/attachments/1206160508424687686/1242806879390797886/IMG_20240518_110350_HDR.jpg?ex=664f2d9a&is=664ddc1a&hm=df08003579f2e5961abe865e35a3084ab2d6e3e433449ef57a580745be1f1275&=&format=webp&width=1214&height=683"
+                  src={MuseumFerritePhoto2}
                   alt='3'
                   width={500}
                   rounded
@@ -97,7 +103,7 @@ function App() {
               </div>
               <div style={{width: 500, height: 300, overflow: "hidden"}}>
                 <Image
-                    src="https://cdn.discordapp.com/attachments/1206160508424687686/1242806878845665310/IMG_20240518_110308.jpg?ex=664f2d9a&is=664ddc1a&hm=a955eec05fb6f19a19cfafdc7a58bf1e5981802fc49fe06ced9152d377aba5b9&"
+                    src={MuseumFerritePhoto3}
                     alt='2'
                     rounded
                     style={{objectFit: "cover", width: "100%", height: "100%", objectPosition: "50% 50%"}}
@@ -105,7 +111,7 @@ function App() {
               </div>
               <div style={{width: 500, height: 300, overflow: "hidden"}}>
                 <Image
-                  src="https://cdn.discordapp.com/attachments/1206160508424687686/1242806879881658441/IMG_20240519_121824.jpg?ex=664f2d9a&is=664ddc1a&hm=8b0e6e31280ce8099a5dde2590dbc432318897dd3cc675405bfb7c1079329873&"
+                  src={MuseumFerritePhoto4}
                   alt='3'
                   width={500}
                   rounded
