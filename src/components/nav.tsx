@@ -1,4 +1,5 @@
 import { Nav } from "react-bootstrap";
+import '../App.css';
 
 export default function Navigation() {
   function handleMovTo(selectedKey: string) {
@@ -15,6 +16,7 @@ export default function Navigation() {
   return (
     <nav>
       <Nav
+        className="navigation"
         style={{
           display: "flex",
           flexDirection: "column",

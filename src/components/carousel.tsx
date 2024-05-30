@@ -5,7 +5,7 @@ import CubeMemory from "../assets/cube-memory.webp";
 
 export default function CarouselComponent() {
   return (
-    <Carousel style={{width: "50%", alignSelf: "center", zIndex: 0}}>
+    <Carousel className="carousel">
       <Carousel.Item>
         <Image
           src={CubeMemoryCM3Photo}

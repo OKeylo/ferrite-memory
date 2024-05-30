@@ -22,11 +22,11 @@ function App() {
           position: "fixed",
           top: 0,
           left: 0,
-          zIndex: 2
+          zIndex: 1
         }}
       >
       </div>
-      <div style={{display: "flex", gap: 16, maxWidth: 1280, alignSelf: "center", padding: "50px 0 50px 0"}}>
+      <div style={{display: "flex", gap: 16, maxWidth: 1280, alignSelf: "center", padding: "50px 2% 50px 2%"}}>
         <Navigation />
         <main style={{display: "flex", flexDirection: "column", gap: 16, flex: 1}}>
           <h1>Память на ферритовых сердечниках</h1>
@@ -46,7 +46,7 @@ function App() {
             <AuthorCard />
             <p>В основу ферритовой памяти легло физическое явление, называемое магнитным гистерезисом.<br/>Магнитный гистерезис возникает, когда к ферромагнетику, например железу, прикладывается внешнее магнитное поле, и атомные диполи выравниваются по нему. Даже если поле убрать, часть выравнивания сохранится: материал намагничен. После намагничивания магнит останется намагниченным на неопределенный срок. Для его размагничивания требуется тепло или магнитное поле противоположного направления. (Магнитный гистерезис)</p>
             <p>Магнитный гистерезис возникает, когда к ферромагнетику, например железу, прикладывается внешнее магнитное поле , и атомные диполи выравниваются по нему. Даже если поле убрать, часть выравнивания сохранится: материал намагничен . После намагничивания магнит остается намагниченным на неопределенный срок. Для его размагничивания требуется тепло или магнитное поле противоположного направления.</p>
-            <Image src={GisterezisPhoto} alt="Магнитный гистерезис" width={500} style={{alignSelf: "center", borderRadius: "4px"}}/>
+            <Image className='sectionImage' src={GisterezisPhoto} alt="Магнитный гистерезис" width={"50%"} style={{alignSelf: "center", borderRadius: "4px"}}/>
           </section>
 
           <section id="principle-of-operation">
@@ -54,8 +54,10 @@ function App() {
             <p>Для систем хранения данных цифровых машин используются ферриты с нелинейными магнитными характеристиками - ферриты с прямоугольной петлей гистерезиса (ППГ).</p>
             <p>Эти ферриты особенны тем, что сердечники, изготовленные из них, могут находиться в двух устойчивых состояниях намагниченности - +B, которое соответствует коду «1», и —В, соответствующее коду «0» в двоичной системе счисления. Для того чтобы перемагнитить, например ферритовый стержень или кольцо, необходимо создать магнитное поле определенной напряженности. Если же магнитное поле имеет напряженность меньше, чем пороговое значение H, то феррит не перемагнитится даже при многократном и длительном приложении этого магнитного поля.</p>
             <Image
+              className='floatImage sectionImage'
               src={FerriteSchemePhoto}
               alt="ферритовые кольца"
+              width={"50%"}
               style={{float: "right", borderRadius: "4px"}}
             />
             <p>Классическая схема использования ферритов с ППГ для запоминающих устройств основана на совпадении полутоков, т.е. на том принципе, что под действием магнитного поля H/2 тороид не меняет своего магнитного состояния, а под действием поля H полностью перемагничивается.</p>
@@ -83,37 +85,37 @@ function App() {
             <p>Расположение: корп. 8, ауд. 401</p>
             <p>Экспонат "Блок ферритовой памяти"</p>
             <div className='wrapper'>
-              <div style={{width: 500, height: 300, overflow: "hidden"}}>
+              <div className='wrapperItem'>
                 <Image
                   src={MuseumFerritePhoto1}
                   alt='1'
-                  width={500}
+                  width={"100%"}
                   rounded
                   style={{objectFit: "cover", width: "100%", height: "100%", objectPosition: "50% 50%"}}
                 />
               </div>
-              <div style={{width: 500, height: 300, overflow: "hidden"}}>
+              <div className='wrapperItem'>
                 <Image
                   src={MuseumFerritePhoto2}
-                  alt='3'
-                  width={500}
+                  alt='2'
+                  width={"100%"}
                   rounded
                   style={{objectFit: "cover", width: "100%", height: "100%", objectPosition: "50% 50%"}}
                 />
               </div>
-              <div style={{width: 500, height: 300, overflow: "hidden"}}>
+              <div className='wrapperItem'>
                 <Image
                     src={MuseumFerritePhoto3}
-                    alt='2'
+                    alt='3'
                     rounded
                     style={{objectFit: "cover", width: "100%", height: "100%", objectPosition: "50% 50%"}}
                   />
               </div>
-              <div style={{width: 500, height: 300, overflow: "hidden"}}>
+              <div className='wrapperItem'>
                 <Image
                   src={MuseumFerritePhoto4}
-                  alt='3'
-                  width={500}
+                  alt='4'
+                  width={"100%"}
                   rounded
                   style={{objectFit: "cover", width: "100%", height: "100%", objectPosition: "50% 50%"}}
                 />
